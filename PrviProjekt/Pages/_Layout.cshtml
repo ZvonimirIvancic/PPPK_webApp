@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicinski Sustav</title>
+    <base href="~/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="PrvoProjekt.styles.css" rel="stylesheet" />
+    <link href="_content/Blazored.Modal/blazored-modal.css" rel="stylesheet" />
+</head>
+<body>
+    @RenderBody()
+
+    <div id="blazor-error-ui">
+        <environment include="Staging,Production">
+            Došlo je do greške. Ova aplikacija možda neće raditi ispravno dok se ne ponovno učita.
+        </environment>
+        <environment include="Development">
+            Neočekivana greška. Molimo pogledajte konzolu preglednika za detalje.
+        </environment>
+        <a href="" class="reload">Ponovno učitaj</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>
